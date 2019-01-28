@@ -9,12 +9,12 @@
 #ifndef _SECPKCS7_H_
 #define _SECPKCS7_H_
 
-#include "seccomon.h"
+#include "../util/seccomon.h"
 
-#include "secoidt.h"
-#include "certt.h"
-#include "keythi.h"
-#include "hasht.h"
+#include "../util/secoidt.h"
+#include "../certdb/certt.h"
+#include "../cryptohi/keythi.h"
+#include "../util/hasht.h"
 #include "pkcs7t.h"
 
 extern const SEC_ASN1Template sec_PKCS7ContentInfoTemplate[];

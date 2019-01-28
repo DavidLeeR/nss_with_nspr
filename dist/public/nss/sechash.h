@@ -5,9 +5,9 @@
 #ifndef _HASH_H_
 #define _HASH_H_
 
-#include "seccomon.h"
-#include "hasht.h"
-#include "secoidt.h"
+#include "../util/seccomon.h"
+#include "../util/hasht.h"
+#include "../util/secoidt.h"
 
 SEC_BEGIN_PROTOS
 

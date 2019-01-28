@@ -9,9 +9,9 @@
 #ifndef __sslt_h_
 #define __sslt_h_
 
-#include "prtypes.h"
-#include "secitem.h"
-#include "certt.h"
+#include "../../../nspr/pr/include/prtypes.h"
+#include "../util/secitem.h"
+#include "../certdb/certt.h"
 
 typedef enum {
     ssl_hs_hello_request = 0,

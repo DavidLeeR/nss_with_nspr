@@ -8,14 +8,14 @@
 #ifndef _CRYPTOHI_H_
 #define _CRYPTOHI_H_
 
-#include "blapit.h"
+#include "../freebl/blapit.h"
 
-#include "seccomon.h"
-#include "secoidt.h"
-#include "secdert.h"
+#include "../util/seccomon.h"
+#include "../util/secoidt.h"
+#include "../util/secdert.h"
 #include "cryptoht.h"
 #include "keythi.h"
-#include "certt.h"
+#include "../certdb/certt.h"
 
 SEC_BEGIN_PROTOS
 

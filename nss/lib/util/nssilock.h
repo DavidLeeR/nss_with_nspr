@@ -102,10 +102,10 @@
 #define _NSSILOCK_H_
 
 #include "utilrename.h"
-#include "prtypes.h"
-#include "prmon.h"
-#include "prlock.h"
-#include "prcvar.h"
+#include "../../../nspr/pr/include/prtypes.h"
+#include "../../../nspr/pr/include/prmon.h"
+#include "../../../nspr/pr/include/prlock.h"
+#include "../../../nspr/pr/include/prcvar.h"
 
 #include "nssilckt.h"
 

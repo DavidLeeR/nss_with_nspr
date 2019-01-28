@@ -4,21 +4,21 @@
 #ifndef _SEC_UTIL_H_
 #define _SEC_UTIL_H_
 
-#include "seccomon.h"
-#include "secitem.h"
-#include "secport.h"
-#include "prerror.h"
-#include "base64.h"
-#include "keyhi.h"
-#include "secpkcs7.h"
-#include "secasn1.h"
-#include "secder.h"
+#include "../../lib/util/seccomon.h"
+#include "../../lib/util/secitem.h"
+#include "../../lib/util/secport.h"
+#include "../../../nspr/pr/include/prerror.h"
+#include "../../lib/util/base64.h"
+#include "../../lib/cryptohi/keyhi.h"
+#include "../../lib/pkcs7/secpkcs7.h"
+#include "../../lib/util/secasn1.h"
+#include "../../lib/util/secder.h"
 #include <stdio.h>
 
 #include "basicutil.h"
-#include "sslerr.h"
-#include "sslt.h"
-#include "blapi.h"
+#include "../../lib/ssl/sslerr.h"
+#include "../../lib/ssl/sslt.h"
+#include "../../lib/freebl/blapi.h"
 
 #define SEC_CT_PRIVATE_KEY "private-key"
 #define SEC_CT_PUBLIC_KEY "public-key"
@@ -428,7 +428,7 @@ CERTCertificate *
 SECU_FindCertByNicknameOrFilename(CERTCertDBHandle *handle,
                                   char *name, PRBool ascii,
                                   void *pwarg);
-#include "secerr.h"
-#include "sslerr.h"
+#include "../../lib/util/secerr.h"
+#include "../../lib/ssl/sslerr.h"
 
 #endif /* _SEC_UTIL_H_ */

@@ -4,16 +4,16 @@
 #ifndef _BASIC_UTILS_H_
 #define _BASIC_UTILS_H_
 
-#include "seccomon.h"
-#include "secitem.h"
-#include "secoid.h"
-#include "secoidt.h"
-#include "secport.h"
-#include "prerror.h"
-#include "base64.h"
-#include "secasn1.h"
-#include "secder.h"
-#include "ecl-exp.h"
+#include "../../lib/util/seccomon.h"
+#include "../../lib/util/secitem.h"
+#include "../../lib/util/secoid.h"
+#include "../../lib/util/secoidt.h"
+#include "../../lib/util/secport.h"
+#include "../../../nspr/pr/include/prerror.h"
+#include "../../lib/util/base64.h"
+#include "../../lib/util/secasn1.h"
+#include "../../lib/util/secder.h"
+#include "../../lib/freebl/ecl/ecl-exp.h"
 #include <stdio.h>
 
 #ifdef SECUTIL_NEW
@@ -133,7 +133,7 @@ void printflags(char *trusts, unsigned int flags);
 extern int ffs(unsigned int i);
 #endif
 
-#include "secerr.h"
+#include "../../lib/util/secerr.h"
 
 extern const char *hex;
 extern const char printable[];

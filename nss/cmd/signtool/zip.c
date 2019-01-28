@@ -5,7 +5,7 @@
 #include "signtool.h"
 #include "zip.h"
 #include "zlib.h"
-#include "prmem.h"
+#include "../../../nspr/pr/include/prmem.h"
 
 static void inttox(int in, char *out);
 static void longtox(long in, char *out);

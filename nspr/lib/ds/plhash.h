@@ -9,7 +9,7 @@
  * API to portable hash table code.
  */
 #include <stdio.h>
-#include "prtypes.h"
+#include "../../pr/include/prtypes.h"
 
 PR_BEGIN_EXTERN_C
 

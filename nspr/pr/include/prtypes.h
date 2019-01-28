@@ -23,7 +23,7 @@
 #ifdef MDCPUCFG
 #include MDCPUCFG
 #else
-#include "prcpucfg.h"
+#include "../../Debug/dist/include/nspr/prcpucfg.h"
 #endif
 
 #include <stddef.h>

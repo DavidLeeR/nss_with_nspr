@@ -9,17 +9,17 @@
 #ifndef _CERT_H_
 #define _CERT_H_
 
-#include "utilrename.h"
-#include "plarena.h"
-#include "plhash.h"
-#include "prlong.h"
-#include "prlog.h"
+#include "../util/utilrename.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "../../../nspr/lib/ds/plhash.h"
+#include "../../../nspr/pr/include/prlong.h"
+#include "../../../nspr/pr/include/prlog.h"
 
-#include "seccomon.h"
-#include "secdert.h"
-#include "secoidt.h"
-#include "keythi.h"
-#include "certt.h"
+#include "../util/seccomon.h"
+#include "../util/secdert.h"
+#include "../util/secoidt.h"
+#include "../cryptohi/keythi.h"
+#include "../certdb/certt.h"
 
 SEC_BEGIN_PROTOS
 

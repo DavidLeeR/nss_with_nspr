@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 #ifndef _SECMOD_H_
 #define _SECMOD_H_
-#include "seccomon.h"
-#include "secmodt.h"
-#include "prinrval.h"
+#include "../util/seccomon.h"
+#include "../pk11wrap/secmodt.h"
+#include "../../../nspr/pr/include/prinrval.h"
 
 /* These mechanisms flags are visible to all other libraries. */
 /* They must be converted to internal SECMOD_*_FLAG */

@@ -9,12 +9,12 @@
 #ifndef _PKCS7T_H_
 #define _PKCS7T_H_
 
-#include "plarena.h"
+#include "../../../nspr/lib/ds/plarena.h"
 
-#include "seccomon.h"
-#include "secoidt.h"
-#include "certt.h"
-#include "secmodt.h"
+#include "../util/seccomon.h"
+#include "../util/secoidt.h"
+#include "../certdb/certt.h"
+#include "../pk11wrap/secmodt.h"
 
 /* Opaque objects */
 typedef struct SEC_PKCS7DecoderContextStr SEC_PKCS7DecoderContext;

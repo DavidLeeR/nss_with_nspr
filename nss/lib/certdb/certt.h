@@ -7,16 +7,16 @@
 #ifndef _CERTT_H_
 #define _CERTT_H_
 
-#include "prclist.h"
-#include "pkcs11t.h"
-#include "seccomon.h"
-#include "secmodt.h"
-#include "secoidt.h"
-#include "plarena.h"
-#include "prcvar.h"
-#include "nssilock.h"
-#include "prio.h"
-#include "prmon.h"
+#include "../../../nspr/pr/include/prclist.h"
+#include "../util/pkcs11t.h"
+#include "../util/seccomon.h"
+#include "../pk11wrap/secmodt.h"
+#include "../util/secoidt.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "../../../nspr/pr/include/prcvar.h"
+#include "../util/nssilock.h"
+#include "../../../nspr/pr/include/prio.h"
+#include "../../../nspr/pr/include/prmon.h"
 
 /* Stan data types */
 struct NSSCertificateStr;
@@ -1278,7 +1278,7 @@ typedef char *(*CERT_StringFromCertFcn)(CERTCertificate *cert);
 
 /* XXX Lisa thinks the template declarations belong in cert.h, not here? */
 
-#include "secasn1t.h" /* way down here because I expect template stuff to
+#include "../util/secasn1t.h" /* way down here because I expect template stuff to
                        * move out of here anyway */
 
 SEC_BEGIN_PROTOS

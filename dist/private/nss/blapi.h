@@ -9,7 +9,7 @@
 #define _BLAPI_H_
 
 #include "blapit.h"
-#include "hasht.h"
+#include "../util/hasht.h"
 #include "alghmac.h"
 
 SEC_BEGIN_PROTOS

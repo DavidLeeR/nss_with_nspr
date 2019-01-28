@@ -4,12 +4,12 @@
 #ifndef _SECMODT_H_
 #define _SECMODT_H_ 1
 
-#include "nssrwlkt.h"
-#include "nssilckt.h"
-#include "secoid.h"
-#include "secasn1.h"
-#include "pkcs11t.h"
-#include "utilmodt.h"
+#include "../util/nssrwlkt.h"
+#include "../util/nssilckt.h"
+#include "../util/secoid.h"
+#include "../util/secasn1.h"
+#include "../util/pkcs11t.h"
+#include "../util/utilmodt.h"
 
 SEC_BEGIN_PROTOS
 

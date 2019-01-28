@@ -3,8 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "signtool.h"
-#include "pk11func.h"
-#include "certdb.h"
+#include "../../lib/pk11wrap/pk11func.h"
+#include "../../lib/certdb/certdb.h"
 
 static int num_trav_certs = 0;
 static SECStatus cert_trav_callback(CERTCertificate *cert, SECItem *k,

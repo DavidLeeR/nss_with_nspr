@@ -5,13 +5,13 @@
 #ifndef _KEYHI_H_
 #define _KEYHI_H_
 
-#include "plarena.h"
+#include "../../../nspr/lib/ds/plarena.h"
 
-#include "seccomon.h"
-#include "secoidt.h"
-#include "secdert.h"
+#include "../util/seccomon.h"
+#include "../util/secoidt.h"
+#include "../util/secdert.h"
 #include "keythi.h"
-#include "certt.h"
+#include "../certdb/certt.h"
 /*#include "secpkcs5.h" */
 
 SEC_BEGIN_PROTOS

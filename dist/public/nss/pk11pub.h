@@ -3,17 +3,17 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 #ifndef _PK11PUB_H_
 #define _PK11PUB_H_
-#include "plarena.h"
-#include "seccomon.h"
-#include "secoidt.h"
-#include "secdert.h"
-#include "keythi.h"
-#include "certt.h"
-#include "pkcs11t.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "../util/seccomon.h"
+#include "../util/secoidt.h"
+#include "../util/secdert.h"
+#include "../cryptohi/keythi.h"
+#include "../certdb/certt.h"
+#include "../util/pkcs11t.h"
 #include "secmodt.h"
-#include "seccomon.h"
-#include "pkcs7t.h"
-#include "cmsreclist.h"
+#include "../util/seccomon.h"
+#include "../pkcs7/pkcs7t.h"
+#include "../smime/cmsreclist.h"
 
 /*
  * Exported PK11 wrap functions.

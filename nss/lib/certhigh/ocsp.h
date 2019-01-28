@@ -9,11 +9,11 @@
 #ifndef _OCSP_H_
 #define _OCSP_H_
 
-#include "plarena.h"
-#include "seccomon.h"
-#include "secoidt.h"
-#include "keythi.h"
-#include "certt.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "../util/seccomon.h"
+#include "../util/secoidt.h"
+#include "../cryptohi/keythi.h"
+#include "../certdb/certt.h"
 #include "ocspt.h"
 
 /************************************************************************/

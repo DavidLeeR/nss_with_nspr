@@ -12,11 +12,11 @@
  */
 
 /* security includes */
-#include "cert.h"
-#include "hasht.h"
+#include "../certdb/cert.h"
+#include "../util/hasht.h"
 
 /* nspr 2.0 includes */
-#include "prio.h"
+#include "../../../nspr/pr/include/prio.h"
 
 #define ZHUGEP
 

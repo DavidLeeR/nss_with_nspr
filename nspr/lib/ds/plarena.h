@@ -12,7 +12,7 @@
  *
  * Also supports LIFO allocation (PL_ARENA_MARK/PL_ARENA_RELEASE).
  */
-#include "prtypes.h"
+#include "../../pr/include/prtypes.h"
 
 PR_BEGIN_EXTERN_C
 

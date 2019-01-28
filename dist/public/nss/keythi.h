@@ -4,11 +4,11 @@
 #ifndef _KEYTHI_H_
 #define _KEYTHI_H_ 1
 
-#include "eccutil.h"
-#include "plarena.h"
-#include "pkcs11t.h"
-#include "secmodt.h"
-#include "prclist.h"
+#include "../util/eccutil.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "../util/pkcs11t.h"
+#include "../pk11wrap/secmodt.h"
+#include "../../../nspr/pr/include/prclist.h"
 
 /*
 ** RFC 4055 Section 1.2 specifies three different RSA key types.

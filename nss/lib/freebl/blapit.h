@@ -8,10 +8,10 @@
 #ifndef _BLAPIT_H_
 #define _BLAPIT_H_
 
-#include "seccomon.h"
-#include "prlink.h"
-#include "plarena.h"
-#include "ecl-exp.h"
+#include "../util/seccomon.h"
+#include "../../../nspr/pr/include/prlink.h"
+#include "../../../nspr/lib/ds/plarena.h"
+#include "ecl/ecl-exp.h"
 
 /* RC2 operation modes */
 #define NSS_RC2 0

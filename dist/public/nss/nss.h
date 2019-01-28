@@ -31,7 +31,7 @@
 
 #ifndef RC_INVOKED
 
-#include "seccomon.h"
+#include "../util/seccomon.h"
 
 typedef struct NSSInitParametersStr NSSInitParameters;
 

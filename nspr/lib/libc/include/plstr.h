@@ -26,7 +26,7 @@
  * sensitive version available.
  */
 
-#include "prtypes.h"
+#include "../../../pr/include/prtypes.h"
 
 PR_BEGIN_EXTERN_C
 /*
