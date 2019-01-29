@@ -10,3 +10,6 @@
 1) enter nss subdir
 2) use command: ./build.sh
 3) build will be in dist dir
+
+## clean instructions:
+1) delete dist dir
