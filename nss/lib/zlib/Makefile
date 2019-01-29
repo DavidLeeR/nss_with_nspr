@@ -26,9 +26,6 @@ gzlib.o: gzlib.c
 gzread.o: gzread.c
 	$(CC) -c gzread.c
 
-gzread.o: gzread.c
-	$(CC) -c gzread.c
-
 gzwrite.o: gzwrite.c
 	$(CC) -c gzwrite.c
 
