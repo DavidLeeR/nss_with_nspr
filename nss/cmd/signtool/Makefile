@@ -1,44 +1,48 @@
-#! gmake
-#
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+CC = gcc
+LDIR = ../../../dist/Debug/lib
+LIBS = -L $(LDIR) -l freebl3 \
+-L $(LDIR) -l mozpkix \
+-L $(LDIR) -l nspr4 \
+-L $(LDIR) -l nss3 \
+-L $(LDIR) -l mozpkix-testlib \
+-L $(LDIR) -l nssckbi \
+-L $(LDIR) -l nssdbm3 \
+-L $(LDIR) -l nssutil3 \
+-L $(LDIR) -l plc4 \
+-L $(LDIR) -l plds4 \
+-L $(LDIR) -l sectool \
+-L $(LDIR) -l smime3 \
+-L $(LDIR) -l softokn3 \
+-L $(LDIR) -l ssl3 \
+-L $(LDIR) -l nss_zlib \
+-L $(LDIR) -l jar
 
-#######################################################################
-# (1) Include initial platform-independent assignments (MANDATORY).   #
-#######################################################################
+signtool: certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o 
+	$(CC) -o signtool certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o $(LIBS) -I.
 
-include manifest.mn
+certgen.o: certgen.c 
+	$(CC) -c certgen.c
 
-#######################################################################
-# (2) Include "global" configuration information. (OPTIONAL)          #
-#######################################################################
+javascript.o: javascript.c
+	$(CC) -c javascript.c
 
-include $(CORE_DEPTH)/coreconf/config.mk
+list.o: list.c
+	$(CC) -c list.c
 
-#######################################################################
-# (3) Include "component" configuration information. (OPTIONAL)       #
-#######################################################################
+sign.o: sign.c
+	$(CC) -c sign.c
 
-#######################################################################
-# (4) Include "local" platform-dependent assignments (OPTIONAL).      #
-#######################################################################
+signtool.o: signtool.c
+	$(CC) -c signtool.c
 
-include ../platlibs.mk
-include $(CORE_DEPTH)/coreconf/zlib.mk
+util.o: util.c
+	$(CC) -c util.c
 
-#######################################################################
-# (5) Execute "global" rules. (OPTIONAL)                              #
-#######################################################################
+verify.o: verify.c
+	$(CC) -c verify.c
 
-include $(CORE_DEPTH)/coreconf/rules.mk
+zip.o: zip.c
+	$(CC) -c zip.c
 
-#######################################################################
-# (6) Execute "component" rules. (OPTIONAL)                           #
-#######################################################################
-
-#######################################################################
-# (7) Execute "local" rules. (OPTIONAL).                              #
-#######################################################################
-
-include ../platrules.mk
+clean: 
+	rm *.o
