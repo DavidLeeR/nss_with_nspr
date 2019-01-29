@@ -49,6 +49,7 @@
 2) ensure zlib and jar libraries have been built and respective .a files placed in dist/Debug/lib subdir (steps 2 and 3) 
 2) navigate to nss/cmd/signtool dir
 3) use command: **make**
+4) .o files and signtool.exe found in current dir
 
 ****************************************************************************************************************************
 ## CLEAN INSTRUCTIONS:
