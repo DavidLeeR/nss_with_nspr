@@ -1,6 +1,6 @@
 # nss_with_nspr
 
-# *To build signtool alone, checkout the "signtool_only" branch of this repo and follow the ReadMe instructions
+# *To build signtool alone, checkout the "clean" branch of this repo and follow the ReadMe instructions
 
 *******************************************************************************************************
 
