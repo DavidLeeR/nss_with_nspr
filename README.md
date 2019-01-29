@@ -5,10 +5,10 @@
 *https://gyp.gsrc.io/* 
 
 steps to install GYP:
-1)Install Chromium depot-tools
-2)Add depot-tools to PATH
-3)Use "fetch gyp" to instal gyp in current dir
-4)Add gyp to PATH-using GYP:
+1) Install Chromium depot-tools
+2) Add depot-tools to PATH
+3) Use "fetch gyp" to instal gyp in current dir
+4) Add gyp to PATH-using GYP:
 
 Example: gyp_main.py <GypFileName.gyp> --depth .
 (This will build the passed gyp file that is located in the current dir)
