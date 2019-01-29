@@ -8,13 +8,13 @@
  *  Jarnature Parsing & Verification
  */
 
-#include "nssrenam.h"
+#include "../nss/nssrenam.h"
 #include "jar.h"
 #include "jarint.h"
-#include "certdb.h"
-#include "certt.h"
-#include "secpkcs7.h"
-#include "secder.h"
+#include "../certdb/certdb.h"
+#include "../certdb/certt.h"
+#include "../pkcs7/secpkcs7.h"
+#include "../util/secder.h"
 
 #define SZ 512
 

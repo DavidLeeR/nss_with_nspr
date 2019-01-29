@@ -172,7 +172,7 @@ typedef Byte *voidp;
 #endif
 
 #ifdef MOZILLA_CLIENT
-#include "prtypes.h"
+#include "../../../nspr/pr/include/prtypes.h"
 #else
 /* Compile with -DZLIB_DLL for Windows DLL support */
 #if (defined(_WINDOWS) || defined(WINDOWS)) && defined(ZLIB_DLL)
