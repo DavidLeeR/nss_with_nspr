@@ -12,11 +12,11 @@
  */
 
 /* security includes */
-#include "cert.h"
-#include "hasht.h"
+#include "../../cmd/signtool/include/cert.h"
+#include "../../cmd/signtool/include/hasht.h"
 
 /* nspr 2.0 includes */
-#include "prio.h"
+#include "../../cmd/signtool/include/prio.h"
 
 #define ZHUGEP
 

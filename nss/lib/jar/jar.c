@@ -12,7 +12,7 @@
 
 #include "jar.h"
 #include "jarint.h"
-#include "portreg.h"
+#include "../../cmd/signtool/include/portreg.h"
 
 static void
 jar_destroy_list(ZZList *list);

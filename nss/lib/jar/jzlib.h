@@ -32,6 +32,10 @@
 #ifndef _ZLIB_H
 #define _ZLIB_H
 
+#ifndef MOZILLA_CLIENT
+#define MOZILLA_CLIENT
+#endif 
+
 #ifdef __cplusplus
 extern "C" {
 #endif

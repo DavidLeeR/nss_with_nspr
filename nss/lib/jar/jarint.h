@@ -4,9 +4,9 @@
 
 /* JAR internal routines */
 
-#include "nspr.h"
-#include "keyhi.h"
-#include "base64.h"
+#include "../../cmd/signtool/include/nspr.h"
+#include "../../cmd/signtool/include/keyhi.h"
+#include "../../cmd/signtool/include/base64.h"
 
 extern CERTCertDBHandle *JAR_open_database(void);
 

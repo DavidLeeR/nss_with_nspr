@@ -10,9 +10,9 @@
 
 #include "jar.h"
 #include "jarint.h"
-#include "secpkcs7.h"
-#include "pk11func.h"
-#include "sechash.h"
+#include "../../cmd/signtool/include/secpkcs7.h"
+#include "../../cmd/signtool/include/pk11func.h"
+#include "../../cmd/signtool/include/sechash.h"
 
 /* from libevent.h */
 typedef void (*ETVoidPtrFunc)(void *data);

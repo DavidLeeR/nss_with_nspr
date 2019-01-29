@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "pk11func.h": "c",
+        "sechash.h": "c",
+        "secpkcs7.h": "c",
+        "certt.h": "c",
+        "secder.h": "c"
+    }
+}

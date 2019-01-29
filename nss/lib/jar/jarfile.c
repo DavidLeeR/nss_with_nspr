@@ -20,7 +20,7 @@
 #include "sys/stat.h"
 #endif
 
-#include "sechash.h" /* for HASH_GetHashObject() */
+#include "../../cmd/signtool/include/sechash.h" /* for HASH_GetHashObject() */
 
 PR_STATIC_ASSERT(46 == sizeof(struct ZipCentral));
 PR_STATIC_ASSERT(30 == sizeof(struct ZipLocal));

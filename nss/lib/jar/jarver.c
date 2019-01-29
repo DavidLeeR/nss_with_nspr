@@ -8,13 +8,13 @@
  *  Jarnature Parsing & Verification
  */
 
-#include "nssrenam.h"
+#include "../../cmd/signtool/include/nssrenam.h"
 #include "jar.h"
 #include "jarint.h"
-#include "certdb.h"
-#include "certt.h"
-#include "secpkcs7.h"
-#include "secder.h"
+#include "../../cmd/signtool/include/certdb.h"
+#include "../../cmd/signtool/include/certt.h"
+#include "../../cmd/signtool/include/secpkcs7.h"
+#include "../../cmd/signtool/include/secder.h"
 
 #define SZ 512
 
