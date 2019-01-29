@@ -8,9 +8,11 @@ steps to install GYP:
 1) Install Chromium depot-tools
 2) Add depot-tools to PATH
 3) Use "fetch gyp" to instal gyp in current dir
-4) Add gyp to PATH-using GYP:
+4) Add gyp to PATH
 
-Example: gyp_main.py <GypFileName.gyp> --depth .
+-using GYP:
+
+Example: **gyp_main.py <GypFileName.gyp> --depth .**
 (This will build the passed gyp file that is located in the current dir)
 
 *https://ninja-build.org/*
