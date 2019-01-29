@@ -4,9 +4,9 @@
 
 #include "signtool.h"
 
-#include "secoid.h"
-#include "cryptohi.h"
-#include "certdb.h"
+#include "include/secoid.h"
+#include "include/cryptohi.h"
+#include "include/certdb.h"
 
 static char *GetSubjectFromUser(unsigned long serial);
 static CERTCertificate *GenerateSelfSignedObjectSigningCert(char *nickname,

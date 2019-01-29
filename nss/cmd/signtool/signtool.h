@@ -11,17 +11,17 @@
 #include <string.h>
 #include <errno.h>
 
-#include "prprf.h"
-#include "prio.h"
-#include "secutil.h"
-#include "ocsp.h"
-#include "jar.h"
-#include "jarfile.h"
-#include "secpkcs7.h"
-#include "pk11func.h"
-#include "secmod.h"
-#include "plhash.h"
-#include "nss.h"
+#include "include/prprf.h"
+#include "include/prio.h"
+#include "include/secutil.h"
+#include "include/ocsp.h"
+#include "include/jar.h"
+#include "include/jarfile.h"
+#include "include/secpkcs7.h"
+#include "include/pk11func.h"
+#include "include/secmod.h"
+#include "include/plhash.h"
+#include "include/nss.h"
 
 #ifdef _UNIX
 #include <unistd.h>

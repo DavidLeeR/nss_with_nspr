@@ -13,10 +13,10 @@
  *
  */
 
-#include "nss.h"
+#include "include/nss.h"
 #include "signtool.h"
-#include "prmem.h"
-#include "prio.h"
+#include "include/prmem.h"
+#include "include/prio.h"
 
 /***********************************************************************
  * Global Variable Definitions

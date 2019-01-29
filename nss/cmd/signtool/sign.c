@@ -4,9 +4,9 @@
 
 #include "signtool.h"
 #include "zip.h"
-#include "prmem.h"
-#include "blapi.h"
-#include "sechash.h" /* for HASH_GetHashObject() */
+#include "include/prmem.h"
+#include "include/blapi.h"
+#include "include/sechash.h" /* for HASH_GetHashObject() */
 
 static int create_pk7(char *dir, char *keyName, int *keyType);
 static int jar_find_key_type(CERTCertificate *cert);

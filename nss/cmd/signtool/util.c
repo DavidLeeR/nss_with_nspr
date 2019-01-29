@@ -3,10 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "signtool.h"
-#include "prio.h"
-#include "prmem.h"
-#include "prenv.h"
-#include "nss.h"
+#include "include/prio.h"
+#include "include/prmem.h"
+#include "include/prenv.h"
+#include "include/nss.h"
 
 static int is_dir(char *filename);
 

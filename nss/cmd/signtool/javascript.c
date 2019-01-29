@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "signtool.h"
-#include <prmem.h>
-#include <prio.h>
-#include <prenv.h>
+#include "include/prmem.h"
+#include "include/prio.h"
+#include "include/prenv.h"
 
 static int javascript_fn(char *relpath, char *basedir, char *reldir,
                          char *filename, void *arg);
