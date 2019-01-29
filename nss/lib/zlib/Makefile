@@ -1,55 +1,57 @@
-#! gmake
-# 
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-#######################################################################
-# (1) Include initial platform-independent assignments (MANDATORY).   #
-#######################################################################
+OBJ = adler32.o compress.o crc32.o deflate.o gzclose.o gzlib.o gzread.o gzwrite.o infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o
+CC = gcc
 
-include manifest.mn
+libnss_zlib.a: $(OBJ)
+	ar rcs libnss_zlib.a $(OBJ)
 
-#######################################################################
-# (2) Include "global" configuration information. (OPTIONAL)          #
-#######################################################################
+adler32.o: adler32.c
+	$(CC) -c adler32.c
 
-include $(CORE_DEPTH)/coreconf/config.mk
+compress.o: compress.c
+	$(CC) -c compress.c
 
-#######################################################################
-# (3) Include "component" configuration information. (OPTIONAL)       #
-#######################################################################
+crc32.o: crc32.c
+	$(CC) -c crc32.c
 
+deflate.o: deflate.c
+	$(CC) -c deflate.c
 
-#######################################################################
-# (4) Include "local" platform-dependent assignments (OPTIONAL).      #
-#######################################################################
+gzclose.o: gzclose.c
+	$(CC) -c gzclose.c
 
-include config.mk
+gzlib.o: gzlib.c
+	$(CC) -c gzlib.c
 
-#######################################################################
-# (5) Execute "global" rules. (OPTIONAL)                              #
-#######################################################################
+gzread.o: gzread.c
+	$(CC) -c gzread.c
 
-include $(CORE_DEPTH)/coreconf/rules.mk
+gzread.o: gzread.c
+	$(CC) -c gzread.c
 
-#######################################################################
-# (6) Execute "component" rules. (OPTIONAL)                           #
-#######################################################################
+gzwrite.o: gzwrite.c
+	$(CC) -c gzwrite.c
 
+infback.o: infback.c
+	$(CC) -c infback.c
 
+inffast.o: inffast.c
+	$(CC) -c inffast.c
 
-#######################################################################
-# (7) Execute "local" rules. (OPTIONAL).                              #
-#######################################################################
+inflate.o: inflate.c
+	$(CC) -c inflate.c
 
-export:: private_export
+inftrees.o: inftrees.c
+	$(CC) -c inftrees.c
 
-test: $(PROGRAMS)
-	@cd $(OBJDIR); \
-	if echo hello world | ./minigzip | ./minigzip -d && ./example; then \
-	  echo '		*** zlib test OK ***'; \
-	else \
-	  echo '		*** zlib test FAILED ***'; false; \
-	fi
-	-@rm -f foo.gz
+trees.o: trees.c
+	$(CC) -c trees.c
+
+uncompr.o: uncompr.c
+	$(CC) -c uncompr.c
+
+zutil.o: zutil.c
+	$(CC) -c zutil.c
+
+clean:
+	rm *.o

@@ -13,7 +13,8 @@ LIBS = -L $(LDIR) -l freebl3 \
 -L $(LDIR) -l sectool \
 -L $(LDIR) -l smime3 \
 -L $(LDIR) -l softokn3 \
--L $(LDIR) -l ssl3
+-L $(LDIR) -l ssl3 \
+-L $(LDIR) -l nss_zlib
 
 signtool: certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o 
 	$(CC) -o signtool certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o $(LIBS) -I.
