@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "pk11func.h": "c",
+        "sechash.h": "c",
+        "secpkcs7.h": "c",
+        "certt.h": "c",
+        "secder.h": "c",
+        "secoid.h": "c",
+        "cryptohi.h": "c",
+        "certdb.h": "c",
+        "blapi.h": "c",
+        "prio.h": "c",
+        "prenv.h": "c",
+        "prmem.h": "c",
+        "nss.h": "c"
+    }
+}
