@@ -17,8 +17,15 @@ LIBS = -L $(LDIR) -l freebl3 \
 -L $(LDIR) -l nss_zlib \
 -L $(LDIR) -l jar
 
-signtool: certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o 
-	$(CC) -o signtool certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o $(LIBS) -I.
+OBJ = certgen.o javascript.o list.o sign.o signtool.o util.o verify.o zip.o 
+OBJ_D = mkdir object
+MV_OBJ = mv $(OBJ) object/
+
+signtool: $(OBJ)
+	$(CC) -o signtool $(OBJ) $(LIBS) -I.
+	$(OBJ_D)
+	$(MV_OBJ)
+	
 
 certgen.o: certgen.c 
 	$(CC) -c certgen.c
@@ -45,4 +52,7 @@ zip.o: zip.c
 	$(CC) -c zip.c
 
 clean: 
-	rm *.o
+	rm -rf object
+
+uninstall: 
+	rm signtool
