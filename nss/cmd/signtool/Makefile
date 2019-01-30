@@ -1,5 +1,5 @@
 CC = gcc
-LDIR = ../../../dist/Debug/lib
+LDIR = lib
 LIBS = -L $(LDIR) -l freebl3 \
 -L $(LDIR) -l mozpkix \
 -L $(LDIR) -l nspr4 \
